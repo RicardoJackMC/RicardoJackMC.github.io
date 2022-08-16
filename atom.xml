@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>惰猫の小窝</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/RicardoJackMC.github.io/"/>
+  <updated>2022-08-15T15:27:43.389Z</updated>
+  <id>https://github.com/RicardoJackMC.github.io/</id>
+  
+  <author>
+    <name>RicardoJackMC</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EVA新剧场版：序 图集</title>
+    <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/EVA%E6%96%B0%E5%89%A7%E5%9C%BA%E7%89%88%EF%BC%9A%E5%BA%8F%20%E5%9B%BE%E9%9B%86/"/>
+    <id>https://github.com/RicardoJackMC.github.io/2022/08/15/EVA新剧场版：序 图集/</id>
+    <published>2022-08-15T14:52:12.000Z</published>
+    <updated>2022-08-15T15:27:43.389Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; &lt;img src=&quot;https://cdn.jsdelivr.net/gh/RicardoJackMC/cdn@latest/WEBP/EVA1.11/P001.webp&quot;&gt;&lt;br&gt; &lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="图集" scheme="https://github.com/RicardoJackMC.github.io/tags/%E5%9B%BE%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加速神器——Watt Toolkit</title>
+    <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/%E5%8A%A0%E9%80%9F%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Watt-Toolkit/"/>
+    <id>https://github.com/RicardoJackMC.github.io/2022/08/15/加速神器——Watt-Toolkit/</id>
+    <published>2022-08-15T02:22:21.000Z</published>
+    <updated>2022-08-15T13:59:40.487Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;00-简介&quot;&gt;&lt;a href=&quot;#00-简介&quot; class=&quot;headerlink&quot; title=&quot;00.简介&quot;&gt;&lt;/a&gt;00.简介&lt;/h1&gt;&lt;p&gt;Watt Toolkit,原名steam++。从原名估计就可以轻松猜出软件的用途吧。不错,Watt
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://github.com/RicardoJackMC.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Github" scheme="https://github.com/RicardoJackMC.github.io/tags/Github/"/>
+    
+      <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
+    
+      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到小窝</title>
+    <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%B0%8F%E7%AA%9D/"/>
+    <id>https://github.com/RicardoJackMC.github.io/2022/08/15/欢迎来到小窝/</id>
+    <published>2022-08-15T02:09:47.000Z</published>
+    <updated>2022-08-15T13:59:40.577Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;(没错，还是测试用的。。。)&lt;/p&gt;
+&lt;p&gt;OMG,它建好了!!!&lt;/p&gt;
+&lt;p&gt;话说要办成一件事真的好难!!!&lt;/p&gt;
+&lt;p&gt;以后有时间出一篇教程专门讲怎么建blog。。。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="https://github.com/RicardoJackMC.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="test_only" scheme="https://github.com/RicardoJackMC.github.io/tags/test-only/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello-word</title>
+    <link href="https://github.com/RicardoJackMC.github.io/2022/08/12/hello-word/"/>
+    <id>https://github.com/RicardoJackMC.github.io/2022/08/12/hello-word/</id>
+    <published>2022-08-12T09:12:36.000Z</published>
+    <updated>2022-08-15T13:59:40.578Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;TEST-ONLY&quot;&gt;&lt;a href=&quot;#TEST-ONLY&quot; class=&quot;headerlink&quot; title=&quot;TEST ONLY&quot;&gt;&lt;/a&gt;TEST ONLY&lt;/h1&gt;&lt;p&gt;God’s in his heaven. All’s right with the
+        
+      
+    
+    </summary>
+    
+      <category term="编程" scheme="https://github.com/RicardoJackMC.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="test_only" scheme="https://github.com/RicardoJackMC.github.io/tags/test-only/"/>
+    
+  </entry>
+  
+</feed>
