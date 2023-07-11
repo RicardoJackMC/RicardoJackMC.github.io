@@ -36,8 +36,8 @@
   mashiro_option.site_name = "不吃小鱼干の惰猫";
   mashiro_option.author_name = "惰猫";
   mashiro_option.site_url = "https://RicardoJackMC.github.io";
-  mashiro_option.v_appId = "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI";
-  mashiro_option.v_appKey = "2vi0j6Eok2hJ9pqguhE6gKIW";
+  mashiro_option.v_appId = "";
+  mashiro_option.v_appKey = "";
   mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -445,35 +445,22 @@
         
       </section>
       
-  
-  
-    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
-    <div id="waline"></div>
-    <style>
-    #waline textarea {
-        box-sizing: border-box;
-        background: url("https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif") 100% 100% no-repeat;
+  <div id="vcomments"></div>
+  <script>
+    window.onload = function(){
+        var valine = new Valine();
+        valine.init({
+          el: '#vcomments',
+          appId: "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI",
+          appKey: "2vi0j6Eok2hJ9pqguhE6gKIW",
+          path: window.location.pathname,
+          placeholder: "你是我一生只会遇见一次的惊喜 ..."
+        })
     }
-    </style>
-    <script>
-        Waline({
-              el: '#waline',
-              serverURL: 'https://comment-for-rjm.vercel.app/',
-              pageSize: '10',
-              lang: 'zh-CN',
-              requiredFields: ['nick','mail'], //设置必填项
-              placeholder: '祝开开心心！',
-              visitor: 'true',
-              emoji: [
-                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-              ],
-              avatar: 'mp',
-              dark: 'false',
-            });
-    </script>
-
+  </script>
+  
+  
+  
 
 
       <section class="author-profile">
