@@ -392,22 +392,35 @@
 
       <!-- .entry-content -->
       
-  <div id="vcomments"></div>
-  <script>
-    window.onload = function(){
-        var valine = new Valine();
-        valine.init({
-          el: '#vcomments',
-          appId: "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI",
-          appKey: "2vi0j6Eok2hJ9pqguhE6gKIW",
-          path: window.location.pathname,
-          placeholder: "你是我一生只会遇见一次的惊喜 ..."
-        })
+  
+  
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <div id="waline"></div>
+    <style>
+    #waline textarea {
+        box-sizing: border-box;
+        background: url("https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif") 100% 100% no-repeat;
     }
-  </script>
-  
-  
-  
+    </style>
+    <script>
+        Waline({
+              el: '#waline',
+              serverURL: 'https://comment-for-rjm.vercel.app/',
+              pageSize: '10',
+              lang: 'zh-CN',
+              requiredFields: ['nick','mail'], //设置必填项
+              placeholder: '祝开开心心！',
+              visitor: 'true',
+              emoji: [
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+              ],
+              avatar: 'mp',
+              dark: 'false',
+            });
+    </script>
+
 
 
       <div class="single-reward">
