@@ -36,8 +36,8 @@
   mashiro_option.site_name = "不吃小鱼干の惰猫";
   mashiro_option.author_name = "惰猫";
   mashiro_option.site_url = "https://RicardoJackMC.github.io";
-  mashiro_option.v_appId = "";
-  mashiro_option.v_appKey = "";
+  mashiro_option.v_appId = "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI";
+  mashiro_option.v_appKey = "2vi0j6Eok2hJ9pqguhE6gKIW";
   mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -464,22 +464,23 @@
           </div>
         
       </section>
-      
-  <div id="vcomments"></div>
-  <script>
-    window.onload = function(){
-        var valine = new Valine();
-        valine.init({
-          el: '#vcomments',
-          appId: "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI",
-          appKey: "2vi0j6Eok2hJ9pqguhE6gKIW",
-          path: window.location.pathname,
-          placeholder: "你是我一生只会遇见一次的惊喜 ..."
-        })
-    }
-  </script>
-  
-  
+       
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <!-- 当然啦，这个可以在<head></head>中引入 -->
+    <div id="vcomments"></div>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'WyaZvZ9xckAqStL744dN4axt-MdYXbMMI',
+        appKey: '2vi0j6Eok2hJ9pqguhE6gKIW',
+        notify:false, 
+        verify:false, 
+        avatar:'mp', 
+        placeholder: 'just go go' 
+    });
+    </script>
+
+
   
 
 
@@ -617,7 +618,7 @@ $(document).ready(function() {
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
     <div class="footertext">
-      edit in 2023-07-11-15-05
+      edit in 2023-07-11-16-26
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">

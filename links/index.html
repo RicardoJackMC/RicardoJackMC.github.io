@@ -36,8 +36,8 @@
   mashiro_option.site_name = "不吃小鱼干の惰猫";
   mashiro_option.author_name = "惰猫";
   mashiro_option.site_url = "https://RicardoJackMC.github.io";
-  mashiro_option.v_appId = "";
-  mashiro_option.v_appKey = "";
+  mashiro_option.v_appId = "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI";
+  mashiro_option.v_appKey = "2vi0j6Eok2hJ9pqguhE6gKIW";
   mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -392,22 +392,23 @@
     <p style="font-size: 13px">
     ※ 为保证友链质量，今后新申请的友链将经过筛选，请在收到我的回复邮件后再于贵站添加本站链接。原则上过去已添加友链不会轻易删除，如遇死链、改变网站用途（友链主要针对的是同类的博客），将单独移至“阵亡将士”分类中，下次清理时未整改的将移除；如遇盗版、破解、网页植入挖矿脚本、极低质量内容、单方面移除本站链接，将直接移除，恕不另行通知。</p>
     
-    
-  <div id="vcomments"></div>
-  <script>
-    window.onload = function(){
-        var valine = new Valine();
-        valine.init({
-          el: '#vcomments',
-          appId: "WyaZvZ9xckAqStL744dN4axt-MdYXbMMI",
-          appKey: "2vi0j6Eok2hJ9pqguhE6gKIW",
-          path: window.location.pathname,
-          placeholder: "你是我一生只会遇见一次的惊喜 ..."
-        })
-    }
-  </script>
-  
-  
+     
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <!-- 当然啦，这个可以在<head></head>中引入 -->
+    <div id="vcomments"></div>
+    <script>
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'WyaZvZ9xckAqStL744dN4axt-MdYXbMMI',
+        appKey: '2vi0j6Eok2hJ9pqguhE6gKIW',
+        notify:false, 
+        verify:false, 
+        avatar:'mp', 
+        placeholder: 'just go go' 
+    });
+    </script>
+
+
   
 
 
@@ -587,7 +588,7 @@ $(document).ready(function() {
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
     <div class="footertext">
-      edit in 2023-07-11-15-05
+      edit in 2023-07-11-16-26
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
