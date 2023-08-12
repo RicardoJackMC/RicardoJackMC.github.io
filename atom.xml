@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/RicardoJackMC.github.io/"/>
-  <updated>2022-08-15T15:27:43.389Z</updated>
+  <updated>2023-08-12T14:29:21.005Z</updated>
   <id>https://github.com/RicardoJackMC.github.io/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>优雅地下载电子教材——Teaching-Material-Download-Manager</title>
+    <link href="https://github.com/RicardoJackMC.github.io/2023/08/12/%E4%BC%98%E9%9B%85%E5%9C%B0%E4%B8%8B%E8%BD%BD%E7%94%B5%E5%AD%90%E6%95%99%E6%9D%90%E2%80%94%E2%80%94Teaching-Material-Download-Manager/"/>
+    <id>https://github.com/RicardoJackMC.github.io/2023/08/12/优雅地下载电子教材——Teaching-Material-Download-Manager/</id>
+    <published>2023-08-12T13:27:59.000Z</published>
+    <updated>2023-08-12T14:29:21.005Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p align=&quot;center&quot;&gt;
+  &lt;img width=&quot;18%&quot; align=&quot;center&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="惰猫自制" scheme="https://github.com/RicardoJackMC.github.io/categories/%E6%83%B0%E7%8C%AB%E8%87%AA%E5%88%B6/"/>
+    
+    
+      <category term="Python" scheme="https://github.com/RicardoJackMC.github.io/tags/Python/"/>
+    
+      <category term="PyQt5" scheme="https://github.com/RicardoJackMC.github.io/tags/PyQt5/"/>
+    
+      <category term="编程" scheme="https://github.com/RicardoJackMC.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="资源" scheme="https://github.com/RicardoJackMC.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
+    
+      <category term="教材下载" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%95%99%E6%9D%90%E4%B8%8B%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>EVA新剧场版：序 图集</title>
@@ -62,11 +101,11 @@
       <category term="技术" scheme="https://github.com/RicardoJackMC.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Github" scheme="https://github.com/RicardoJackMC.github.io/tags/Github/"/>
+      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
     
       <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
     
-      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
+      <category term="Github" scheme="https://github.com/RicardoJackMC.github.io/tags/Github/"/>
     
   </entry>
   
