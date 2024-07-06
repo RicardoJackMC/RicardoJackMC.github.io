@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/RicardoJackMC.github.io/"/>
-  <updated>2024-07-06T09:50:05.156Z</updated>
+  <updated>2024-07-06T10:23:45.621Z</updated>
   <id>https://github.com/RicardoJackMC.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://github.com/RicardoJackMC.github.io/2023/08/12/%E4%BC%98%E9%9B%85%E5%9C%B0%E4%B8%8B%E8%BD%BD%E7%94%B5%E5%AD%90%E6%95%99%E6%9D%90%E2%80%94%E2%80%94Teaching-Material-Download-Manager/"/>
     <id>https://github.com/RicardoJackMC.github.io/2023/08/12/优雅地下载电子教材——Teaching-Material-Download-Manager/</id>
     <published>2023-08-12T13:27:59.000Z</published>
-    <updated>2024-07-06T09:50:05.156Z</updated>
+    <updated>2024-07-06T10:23:45.621Z</updated>
     
     <summary type="html">
     
@@ -39,10 +39,6 @@
       <category term="惰猫自制" scheme="https://github.com/RicardoJackMC.github.io/categories/%E6%83%B0%E7%8C%AB%E8%87%AA%E5%88%B6/"/>
     
     
-      <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
-    
-      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
-    
       <category term="Python" scheme="https://github.com/RicardoJackMC.github.io/tags/Python/"/>
     
       <category term="PyQt5" scheme="https://github.com/RicardoJackMC.github.io/tags/PyQt5/"/>
@@ -50,6 +46,10 @@
       <category term="编程" scheme="https://github.com/RicardoJackMC.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="资源" scheme="https://github.com/RicardoJackMC.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
+    
+      <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
     
       <category term="教材下载" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%95%99%E6%9D%90%E4%B8%8B%E8%BD%BD/"/>
     
@@ -60,7 +60,7 @@
     <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/EVA%E6%96%B0%E5%89%A7%E5%9C%BA%E7%89%88%EF%BC%9A%E5%BA%8F%20%E5%9B%BE%E9%9B%86/"/>
     <id>https://github.com/RicardoJackMC.github.io/2022/08/15/EVA新剧场版：序 图集/</id>
     <published>2022-08-15T14:52:12.000Z</published>
-    <updated>2024-07-06T09:50:05.156Z</updated>
+    <updated>2024-07-06T10:23:45.621Z</updated>
     
     <summary type="html">
     
@@ -68,7 +68,7 @@
       
         
         
-          &lt;p&gt; &lt;img src=&quot;https://fastly.jsdelivr.net/gh/RicardoJackMC/cdn@latest/WEBP/EVA1.11/P001.webp&quot;&gt;&lt;br&gt; &lt;img
+          &lt;p&gt; &lt;img src=&quot;https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/WEBP/EVA1.11/P001.webp&quot;&gt;&lt;br&gt; &lt;img
         
       
     
@@ -84,7 +84,7 @@
     <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/%E5%8A%A0%E9%80%9F%E7%A5%9E%E5%99%A8%E2%80%94%E2%80%94Watt-Toolkit/"/>
     <id>https://github.com/RicardoJackMC.github.io/2022/08/15/加速神器——Watt-Toolkit/</id>
     <published>2022-08-15T02:22:21.000Z</published>
-    <updated>2024-07-06T09:50:05.156Z</updated>
+    <updated>2024-07-06T10:23:45.621Z</updated>
     
     <summary type="html">
     
@@ -101,11 +101,11 @@
       <category term="技术" scheme="https://github.com/RicardoJackMC.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Github" scheme="https://github.com/RicardoJackMC.github.io/tags/Github/"/>
+      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
     
       <category term="Windows" scheme="https://github.com/RicardoJackMC.github.io/tags/Windows/"/>
     
-      <category term="惰猫推荐" scheme="https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"/>
+      <category term="Github" scheme="https://github.com/RicardoJackMC.github.io/tags/Github/"/>
     
   </entry>
   
@@ -114,7 +114,7 @@
     <link href="https://github.com/RicardoJackMC.github.io/2022/08/15/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%B0%8F%E7%AA%9D/"/>
     <id>https://github.com/RicardoJackMC.github.io/2022/08/15/欢迎来到小窝/</id>
     <published>2022-08-15T02:09:47.000Z</published>
-    <updated>2024-07-06T09:50:05.156Z</updated>
+    <updated>2024-07-06T10:23:45.621Z</updated>
     
     <summary type="html">
     
@@ -144,7 +144,7 @@
     <link href="https://github.com/RicardoJackMC.github.io/2022/08/12/hello-word/"/>
     <id>https://github.com/RicardoJackMC.github.io/2022/08/12/hello-word/</id>
     <published>2022-08-12T09:12:36.000Z</published>
-    <updated>2024-07-06T09:50:05.156Z</updated>
+    <updated>2024-07-06T10:23:45.621Z</updated>
     
     <summary type="html">
     
