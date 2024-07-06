@@ -479,12 +479,35 @@
           </div>
         
       </section>
-       
-
-  
-
-<div class="livere-card card" data-aos="fade-up"> <!-- 来必力City版安装代码 --> <style> #taboola-livere { display: none;} </style> <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NjkzNC8zMzM5OA=="> <script type="text/javascript"> (function (d, s) { let j, e = d.getElementsByTagName(s)[0]; if (typeof LivereTower === 'function') { return; } j = d.createElement(s); j.src = 'https://cdn-city.livere.com/js/embed.dist.js'; j.async = true; e.parentNode.insertBefore(j, e); })(document, 'script'); </script> <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript> </div> <!-- City版安装代码已完成 --> </div>
-
+      
+    
+    
+      <div id="waline" style="max-width: 800px;margin: 0 auto;"></div>
+      <link href='https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/js/waline.css' rel='stylesheet' />
+      <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+        const params = new URLSearchParams(location.search.slice(1));
+        const waline = init({
+          el: '#waline',
+          path: params.get('path') || '/',
+          lang: params.get('lng') || undefined,
+          recaptchaV3Key: '',
+          turnstileKey: '',
+          serverURL: 'comment.ricardojackmc.top',
+          pageSize: '10',
+          requiredFields: ['nick','mail'], //设置必填项
+          placeholder: '祝开开心心！',
+          visitor: 'false',
+          emoji: [
+              'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+              'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+              'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+          ],
+          avatar: 'mp',
+        });
+    </script>
+    
+    
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
