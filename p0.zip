@@ -121,6 +121,6 @@
         <tr>
     </tbody>
 </table></markdown-accessiblity-table>
-<div><a href="contents()">← back</a></div>
+<div><a href="javascript:contents();">← back</a></div>
 </body>
 </html>
