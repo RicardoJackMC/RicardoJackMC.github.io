@@ -44,7 +44,7 @@
     <nav id="music-services" data-test="music-service-list" class="music-service-list" role="navigation">
 
       <div class="music-service-list__item1" data-test="music-service-list-item">
-            <div id="player1" style="padding-bottom:0px;"><button class="docute-button-" onclick="add()">listen now !</button></div>
+            <div id="player1" style="padding-bottom:0px;"><button class="docute-button-" onclick="add()">click to listen now !</button></div>
 
           </div>
       
