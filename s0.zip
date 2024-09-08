@@ -10,7 +10,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <div id="aplayer"></div>
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 
 </head>
 <body>
@@ -40,126 +39,6 @@
 
     </nav>
 </div> -->
-<script>
-  function add() {
-      document.getElementById('player1').removeEventListener('click', add);
-
-      window.ap = new APlayer({
-      container: document.getElementById('player1'),
-      autoplay: true,
-      audio: [
-      {
-          name: 'the 1',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/Km0To/the%201.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'cardigan',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/gArU0/cardigan.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'the last great american dynasty',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/v1yfM/the%20last%20great%20american%20dynasty.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'exile',
-          artist: 'Taylor Swift,Bon Iver',
-          url: 'https://cloud.wujiyan.cc/f/nvEUn/exile.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'my tears ricochet',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/w1Zi4/my%20tears%20ricochet.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'mirrorball',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/pDXU0/mirrorball.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'seven',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/B71cW/seven.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'august',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/bokiy/august.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'this is me trying',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/1jyiB/this%20is%20me%20trying.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'illicit affairs',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/jr9ug/illicit%20affairs.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'invisible string',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/q48iw/invisible%20string.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'mad woman',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/qzofw/mad%20woman.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'epiphany',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/NEyTY/epiphany.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'betty',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/VzeCM/betty.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'peace',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/Y8Nhl/peace.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'hoax',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/2xZuk/hoax.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'the lakes (bonus track)',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/ljDTm/the%20lakes%20%28bonus%20track%29.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      },
-      {
-          name: 'folklore (deluxe version)',
-          artist: 'Taylor Swift',
-          url: 'https://cloud.wujiyan.cc/f/Za2UK/CDImage.wav',
-          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-      }
-  ]
-  });
-  }
-  </script>
 
 <div class="layout__content" data-test="layout-content" id="music-services1">
     <nav id="music-services" data-test="music-service-list" class="music-service-list" role="navigation">
@@ -175,7 +54,7 @@
             <a id="7a586f9f-9e2d-4383-83cc-b2aa5bd1798d" data-media-serviceid="7a586f9f-9e2d-4383-83cc-b2aa5bd1798d" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="qqmusic://qq.com/ui/album?p=%7B%22id%22%3A%2213889899%22%7D&source=https%3A%2F%2Fi.y.qq.com%2Fn2%2Fm%2Fshare%2Fdetails%2Falbum.html%3F%26albumId%3D13889899%26appshare%3Dandroid_qq%26appversion%3D11100008%26channelId%3D10036163%26hosteuin%3Dnull%26openinqqmusic%3D1%26platform%3D11%26ADTAG%3Dcbshare" data-uri="spotify://album/1pzvBxYgT6OVwJLtHkrdQK?utm_campaign=fAfTD_96_fmly&amp;utm_source=Original_Original&amp;utm_medium=Original&amp;utm_content=b99762a1-8174-41e6-939e-d57b524bc664_none_Taylor%2BSwift_none_folklore%2B%2528deluxe%2Bversion%2529_none_20200818_https%253A%252F%252Fcn.bing.com%252F_universal-international_JP_taylor.lnk.to%2Ffolklore_Deluxe" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="spotify" data-category="service" data-category-type="play" data-action="Play" data-rank="3">
           
           <div class="music-service-list__content">
-            <img class="music-service-list__img" data-test="music-service-item-image" src="https://services.linkfire.com/logo_qqcom_onlight.svg" alt="Spotify" longdesc="qqmusic://qq.com/ui/album?p=%7B%22id%22%3A%2213889899%22%7D&source=https%3A%2F%2Fi.y.qq.com%2Fn2%2Fm%2Fshare%2Fdetails%2Falbum.html%3F%26albumId%3D13889899%26appshare%3Dandroid_qq%26appversion%3D11100008%26channelId%3D10036163%26hosteuin%3Dnull%26openinqqmusic%3D1%26platform%3D11%26ADTAG%3Dcbshare">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/qjocw/qq.png" alt="Spotify" longdesc="qqmusic://qq.com/ui/album?p=%7B%22id%22%3A%2213889899%22%7D&source=https%3A%2F%2Fi.y.qq.com%2Fn2%2Fm%2Fshare%2Fdetails%2Falbum.html%3F%26albumId%3D13889899%26appshare%3Dandroid_qq%26appversion%3D11100008%26channelId%3D10036163%26hosteuin%3Dnull%26openinqqmusic%3D1%26platform%3D11%26ADTAG%3Dcbshare">
             <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
               <span class="btn-label" data-test="music-service-item-button-label">Play</span>
             </button>
@@ -203,7 +82,7 @@
             <a id="b2a0e6eb-620f-473f-a6ec-f9397dd2d204" data-media-serviceid="b2a0e6eb-620f-473f-a6ec-f9397dd2d204" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="orpheus://album/92895788/" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="itunes" data-category="service" data-category-type="download" data-action="Download" data-rank="5">
           
           <div class="music-service-list__content">
-            <img class="music-service-list__img" data-test="music-service-item-image" src="https://services.linkfire.com/logo_netease_onlight.svg" alt="netease" longdesc="orpheus://album/92895788/">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/VReSM/wyy.png" alt="netease" longdesc="orpheus://album/92895788/">
             <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Download" data-listener="true">
               <span class="btn-label" data-test="music-service-item-button-label">Play</span>
             </button>
@@ -263,126 +142,6 @@
     </style>
     
                 </div>
-                <script>
-                  function add() {
-                      document.getElementById('player1').removeEventListener('click', add);
-                
-                      window.ap = new APlayer({
-                      container: document.getElementById('player1'),
-                      autoplay: true,
-                      audio: [
-                      {
-                          name: 'the 1',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/Km0To/the%201.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'cardigan',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/gArU0/cardigan.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'the last great american dynasty',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/v1yfM/the%20last%20great%20american%20dynasty.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'exile',
-                          artist: 'Taylor Swift,Bon Iver',
-                          url: 'https://cloud.wujiyan.cc/f/nvEUn/exile.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'my tears ricochet',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/w1Zi4/my%20tears%20ricochet.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'mirrorball',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/pDXU0/mirrorball.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'seven',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/B71cW/seven.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'august',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/bokiy/august.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'this is me trying',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/1jyiB/this%20is%20me%20trying.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'illicit affairs',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/jr9ug/illicit%20affairs.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'invisible string',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/q48iw/invisible%20string.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'mad woman',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/qzofw/mad%20woman.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'epiphany',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/NEyTY/epiphany.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'betty',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/VzeCM/betty.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'peace',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/Y8Nhl/peace.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'hoax',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/2xZuk/hoax.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'the lakes (bonus track)',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/ljDTm/the%20lakes%20%28bonus%20track%29.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      },
-                      {
-                          name: 'folklore (deluxe version)',
-                          artist: 'Taylor Swift',
-                          url: 'https://cloud.wujiyan.cc/f/Za2UK/CDImage.wav',
-                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
-                      }
-                  ]
-                  });
-                  }
-                  </script>
                 
 </main>
 <style>
