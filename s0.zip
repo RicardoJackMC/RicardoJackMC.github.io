@@ -16,7 +16,7 @@
 <main class="layout">
     <div class="site-bg" data-test="landingpage-bg">
     
-    <img src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg" data-test="landingpage-bg-image" role="presentation">
+    <img src="https://cloud.wujiyan.cc/f/QQesz/cover.jpg" data-test="landingpage-bg-image" role="presentation">
 </div>
 
 <div class="layout__cover js-cover" style="margin-bottom: 16px;">
@@ -24,7 +24,7 @@
     <div class="player" id="mp-container">
         <div class="cover media-player-placeholder">
                             <div class="cover__artwork">
-            <img class="cover__artwork-img" src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg" alt="Taylor Swift - folklore (deluxe version)">
+            <img class="cover__artwork-img" src="https://cloud.wujiyan.cc/f/QQesz/cover.jpg" alt="Taylor Swift - folklore (deluxe version)">
             </div>
         </div>
     <div class="media-player" id="media-player-0" data-test="music-player-wrapper"><div class="cover-container"><img class="cover-image" role="presentation" src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg"><div class="cover-overlay"></div></div><div class="visualizer" data-test="music-player-visualizer"><canvas width="0" height="0"></canvas></div></div></div>
