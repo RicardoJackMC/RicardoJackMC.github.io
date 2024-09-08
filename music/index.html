@@ -42,8 +42,8 @@
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
+  mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  mashiro_option.float_player_on = true;
 
   /*End of Initial Variables*/
   </script>
@@ -72,7 +72,7 @@
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
-        <a target="_blank" rel="noopener" href="https://RicardoJackMC.top">
+        <a href="https://RicardoJackMC.top">
           <img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp">
         </a>
       </div>
@@ -124,16 +124,17 @@
       </div>
     </div>
   </figure>
-  <div id="video-container" style="">
+
+  <div id="video-container">
     <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
-    <div id="video-btn" class="loadvideo videolive">
-    </div>
+    
     <div id="video-add">
     </div>
     <div class="video-stu">
     </div>
   </div>
+
   <div class="headertop-down faa-float animated" onclick="headertop_down()">
     <span>
       <i class="fa fa-chevron-down" aria-hidden="true">
@@ -358,6 +359,16 @@
                       </li>
                     
                   </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
                 
               </li>
             
@@ -740,7 +751,7 @@
         <div class="meta">
           <span class="title">Author</span>
           <h3 itemprop="name">
-          <a target="_blank" href="https://RicardoJackMC.top" itemprop="url" rel="author noopener">惰猫</a>
+          <a href="https://RicardoJackMC.top" itemprop="url" rel="author">惰猫</a>
           </h3>
         </div>
       </div>
@@ -803,11 +814,13 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
 <script type="text/javascript">
 /* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && $("").length > 0) {
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
+
 /* ]]> */
 
 </script>
@@ -1127,6 +1140,16 @@ $(document).ready(function() {
               </li>
             
           </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
         
       </li>
     

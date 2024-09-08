@@ -42,8 +42,8 @@
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
+  mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  mashiro_option.float_player_on = true;
 
   /*End of Initial Variables*/
   </script>
@@ -72,7 +72,7 @@
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
-        <a target="_blank" rel="noopener" href="https://RicardoJackMC.top">
+        <a href="https://RicardoJackMC.top">
           <img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp">
         </a>
       </div>
@@ -124,16 +124,17 @@
       </div>
     </div>
   </figure>
-  <div id="video-container" style="">
+
+  <div id="video-container">
     <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
-    <div id="video-btn" class="loadvideo videolive">
-    </div>
+    
     <div id="video-add">
     </div>
     <div class="video-stu">
     </div>
   </div>
+
   <div class="headertop-down faa-float animated" onclick="headertop_down()">
     <span>
       <i class="fa fa-chevron-down" aria-hidden="true">
@@ -361,6 +362,16 @@
                 
               </li>
             
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
           </ul>
         </nav>
       </div>
@@ -381,12 +392,12 @@
       优雅地下载电子教材——Teaching-Material-Download-Manager</h1>
       <p class="entry-census">
         <span>
-          <a href="https://github.com/RicardoJackMC.github.io">
+          <a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC.github.io">
             <img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp">
           </a>
         </span>
         <span>
-          <a href="https://github.com/RicardoJackMC.github.io">RicardoJackMC</a>
+          <a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC.github.io">RicardoJackMC</a>
         </span>
         <span class="bull">
         ·</span>
@@ -408,7 +419,7 @@
   <img width="18%" align="center" src="https://raw.githubusercontent.com/RicardoJackMC/Teaching-Material-Download-Manager/main/recourse/logo.png" alt="logo">
 </p>
   <h1 align="center">
-  <a href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/">Teaching-Material-Download-Manager</a>
+  <a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/">Teaching-Material-Download-Manager</a>
 </h1>
 <p align="center">
   优雅地下载电子教材
@@ -422,16 +433,16 @@
   </a>
 </p>
 <p align="center">
-下载地址: <a href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/releases">GitHub release</a> | <a target="_blank" rel="noopener" href="https://www.123pan.com/s/Y59qVv-uuubd.html">123网盘</a>
+下载地址: <a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/releases">GitHub release</a> | <a target="_blank" rel="noopener" href="https://www.123pan.com/s/Y59qVv-uuubd.html">123网盘</a>
 </p>
 <p align="center">
   <img width="100%" align="center" src="https://raw.githubusercontent.com/RicardoJackMC/Teaching-Material-Download-Manager/main/recourse/pic.png" alt="logo">
 </p>
 
-<p>上面是照搬GitHub仓库README文件的, 具体可以去<a href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager">GitHub仓库</a>看, 这里就不啰嗦了😶‍🌫️</p>
+<p>上面是照搬GitHub仓库README文件的, 具体可以去<a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager">GitHub仓库</a>看, 这里就不啰嗦了😶‍🌫️</p>
 <p>讲一下软件开发的历程吧: </p>
-<p>总共用时约三周, 7月29号决定开搞, 7月30号开始整理各种下载链接, 7月31号正式开始写代码, 本以为最难的核心下载部分<a href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/blob/main/Textbook_File.py"><code>Textbook_File.py</code></a>仅用了三天, 8月1日开始写界面, 本来以为超级容易的界面以及各种操作逻辑是最简单的, 结果一直弄到8月9号才完成, 剩下时间在集中除虫, 然后就发布了…</p>
-<p>然后本来在写核心程序的时候思路清晰热情高涨, 结果到后面, 特别是写界面的时候, 简直就是纯摆烂状态, 大脑呈糨糊状…所以如果去看界面部分<a href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/blob/main/Window.py"><code>Window.py</code></a>可能会高血压🤣</p>
+<p>总共用时约三周, 7月29号决定开搞, 7月30号开始整理各种下载链接, 7月31号正式开始写代码, 本以为最难的核心下载部分<a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/blob/main/Textbook_File.py"><code>Textbook_File.py</code></a>仅用了三天, 8月1日开始写界面, 本来以为超级容易的界面以及各种操作逻辑是最简单的, 结果一直弄到8月9号才完成, 剩下时间在集中除虫, 然后就发布了…</p>
+<p>然后本来在写核心程序的时候思路清晰热情高涨, 结果到后面, 特别是写界面的时候, 简直就是纯摆烂状态, 大脑呈糨糊状…所以如果去看界面部分<a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC/Teaching-Material-Download-Manager/blob/main/Window.py"><code>Window.py</code></a>可能会高血压🤣</p>
 <p>已知的问题: </p>
 <ol>
 <li>在下载的时候界面会卡死, 可能因为不合理地使用Qthread导致的. </li>
@@ -489,7 +500,8 @@
           </div>
         
       </section>
-      
+      <div id=''>
+        
     
     
       <div id="waline" style="max-width: 800px;margin: 0 auto;"></div>
@@ -499,7 +511,7 @@
         const params = new URLSearchParams(location.search.slice(1));
         const waline = init({
           el: '#waline',
-          path: params.get('path') || '/',
+          path: window.location.pathname,
           lang: params.get('lng') || undefined,
           recaptchaV3Key: '',
           turnstileKey: '',
@@ -519,13 +531,14 @@
     
     
 
+      </div>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="https://github.com/RicardoJackMC.github.io" class="profile gravatar"><img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp" itemprop="image" alt="RicardoJackMC" height="70" width="70"></a>
+          <a target="_blank" rel="noopener" href="https://github.com/RicardoJackMC.github.io" class="profile gravatar"><img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp" itemprop="image" alt="RicardoJackMC" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="https://github.com/RicardoJackMC.github.io" itemprop="url" rel="author">RicardoJackMC</a>
+            <a target="_blank" href="https://github.com/RicardoJackMC.github.io" itemprop="url" rel="author noopener">RicardoJackMC</a>
             </h3>
           </div>
         </div>
@@ -592,11 +605,13 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
 <script type="text/javascript">
 /* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && $("").length > 0) {
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
+
 /* ]]> */
 
 </script>
@@ -916,6 +931,16 @@ $(document).ready(function() {
               </li>
             
           </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
         
       </li>
     

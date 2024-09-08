@@ -42,8 +42,8 @@
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
+  mashiro_option.jsdelivr_css_src = "https://cdn.jsdmirror.com/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  mashiro_option.float_player_on = true;
 
   /*End of Initial Variables*/
   </script>
@@ -72,7 +72,7 @@
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
-        <a target="_blank" rel="noopener" href="https://RicardoJackMC.top">
+        <a href="https://RicardoJackMC.top">
           <img src="https://cdn.jsdmirror.com/gh/RicardoJackMC/cdn@latest/cdn/RicardoJackMC.webp">
         </a>
       </div>
@@ -124,16 +124,17 @@
       </div>
     </div>
   </figure>
-  <div id="video-container" style="">
+
+  <div id="video-container">
     <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
-    <div id="video-btn" class="loadvideo videolive">
-    </div>
+    
     <div id="video-add">
     </div>
     <div class="video-stu">
     </div>
   </div>
+
   <div class="headertop-down faa-float animated" onclick="headertop_down()">
     <span>
       <i class="fa fa-chevron-down" aria-hidden="true">
@@ -361,6 +362,16 @@
                 
               </li>
             
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
           </ul>
         </nav>
       </div>
@@ -587,6 +598,16 @@
                 
               </li>
             
+              <li>
+                <a href="/atom.xml">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+                    RSS
+                  </span>
+                </a>
+                
+              </li>
+            
           </ul>
         </nav>
       </div>
@@ -720,7 +741,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"test_only","weight":2,"link":"https://github.com/RicardoJackMC.github.io/tags/test-only/"},{"text":"图集","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/%E5%9B%BE%E9%9B%86/"},{"text":"Python","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/Python/"},{"text":"PyQt5","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/PyQt5/"},{"text":"编程","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/%E7%BC%96%E7%A8%8B/"},{"text":"资源","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/%E8%B5%84%E6%BA%90/"},{"text":"惰猫推荐","weight":2,"link":"https://github.com/RicardoJackMC.github.io/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"},{"text":"Windows","weight":2,"link":"https://github.com/RicardoJackMC.github.io/tags/Windows/"},{"text":"教材下载","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/%E6%95%99%E6%9D%90%E4%B8%8B%E8%BD%BD/"},{"text":"Github","weight":1,"link":"https://github.com/RicardoJackMC.github.io/tags/Github/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"test_only","weight":2,"link":"https://ricardojackmc.top/tags/test-only/"},{"text":"图集","weight":1,"link":"https://ricardojackmc.top/tags/%E5%9B%BE%E9%9B%86/"},{"text":"Python","weight":1,"link":"https://ricardojackmc.top/tags/Python/"},{"text":"PyQt5","weight":1,"link":"https://ricardojackmc.top/tags/PyQt5/"},{"text":"编程","weight":1,"link":"https://ricardojackmc.top/tags/%E7%BC%96%E7%A8%8B/"},{"text":"资源","weight":1,"link":"https://ricardojackmc.top/tags/%E8%B5%84%E6%BA%90/"},{"text":"惰猫推荐","weight":2,"link":"https://ricardojackmc.top/tags/%E6%83%B0%E7%8C%AB%E6%8E%A8%E8%8D%90/"},{"text":"Windows","weight":2,"link":"https://ricardojackmc.top/tags/Windows/"},{"text":"教材下载","weight":1,"link":"https://ricardojackmc.top/tags/%E6%95%99%E6%9D%90%E4%B8%8B%E8%BD%BD/"},{"text":"Github","weight":1,"link":"https://ricardojackmc.top/tags/Github/"}], {
         autoResize: true
     });
 </script>
@@ -780,11 +801,13 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
 <script type="text/javascript">
 /* <![CDATA[ */
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) && $("").length > 0) {
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdmirror.com/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"1","movies":{"url": "","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
+
 /* ]]> */
 
 </script>
@@ -1104,6 +1127,16 @@ $(document).ready(function() {
               </li>
             
           </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/atom.xml">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-rss faa-pulse" aria-hidden="true"></i>
+            RSS
+          </span>
+        </a>
         
       </li>
     
