@@ -121,6 +121,6 @@
         <tr>
     </tbody>
 </table></markdown-accessiblity-table>
-<a onclick="contents()">← back</a>
+<div><a href="contents()">← back</a></div>
 </body>
 </html>
