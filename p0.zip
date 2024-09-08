@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style src="https://github.githubassets.com/assets/primer-ff8ec1db4f06.css"></style>
+<style>
+    table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-radius: 50px;
+    border-collapse: collapse;
+}
+    th,td {
+        padding: 5px;
+    }
+</style>
+<markdown-accessiblity-table data-catalyst=""><table tabindex="1" border="1"> <!-- border属性定义表格边框的宽度 -->
+    <caption>direct link</caption> <!-- 表格标题 -->
+    <thead> <!-- 表格头 -->
+        <tr>
+            <th>song</th> <!-- 表头单元格 -->
+            <th>download link</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>the 1</td>
+            <td><a href="https://cloud.wujiyan.cc/f/Km0To/the%201.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>cardigan</td>
+            <td><a href="https://cloud.wujiyan.cc/f/gArU0/cardigan.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>the last great american dynasty</td>
+            <td><a href="https://cloud.wujiyan.cc/f/v1yfM/the%20last%20great%20american%20dynasty.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>exile</td>
+            <td><a href="https://cloud.wujiyan.cc/f/nvEUn/exile.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>my tears ricochet</td>
+            <td><a href="https://cloud.wujiyan.cc/f/w1Zi4/my%20tears%20ricochet.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>mirrorball</td>
+            <td><a href="https://cloud.wujiyan.cc/f/pDXU0/mirrorball.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>seven</td>
+            <td><a href="https://cloud.wujiyan.cc/f/B71cW/seven.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>august</td>
+            <td><a href="https://cloud.wujiyan.cc/f/bokiy/august.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>this is me trying</td>
+            <td><a href="https://cloud.wujiyan.cc/f/1jyiB/this%20is%20me%20trying.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>illicit affairs</td>
+            <td><a href="https://cloud.wujiyan.cc/f/jr9ug/illicit%20affairs.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>invisible string</td>
+            <td><a href="https://cloud.wujiyan.cc/f/q48iw/invisible%20string.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>mad woman</td>
+            <td><a href="https://cloud.wujiyan.cc/f/qzofw/mad%20woman.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>epiphany</td>
+            <td><a href="https://cloud.wujiyan.cc/f/NEyTY/epiphany.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>betty</td>
+            <td><a href="https://cloud.wujiyan.cc/f/VzeCM/betty.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>peace</td>
+            <td><a href="https://cloud.wujiyan.cc/f/Y8Nhl/peace.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>hoax</td>
+            <td><a href="https://cloud.wujiyan.cc/f/2xZuk/hoax.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>the lakes (bonus track)</td>
+            <td><a href="https://cloud.wujiyan.cc/f/ljDTm/the%20lakes%20%28bonus%20track%29.wav">click to download</a></td>
+        </tr>
+   
+        <tr>
+            <td>folklore (deluxe version)</td>
+            <td><a href="https://cloud.wujiyan.cc/f/Za2UK/CDImage.wav">click to download</a></td>
+        <tr>
+    </tbody>
+</table></markdown-accessiblity-table>
+</body>
+</html>

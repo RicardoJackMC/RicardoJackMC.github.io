@@ -118,8 +118,8 @@
           <div class="music-service-list__item" data-test="music-service-list-item">
             <a id="20708006-5703-41c8-b13b-b6bb89e5c703" data-media-serviceid="20708006-5703-41c8-b13b-b6bb89e5c701" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="https://www.alipan.com/s/k4ptbD3aX3J" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="youtube" data-category="service" data-category-type="play" data-action="Play" data-rank="6">
           
-          <div class="music-service-list__content">
-            <img class="music-service-list__img" data-test="music-service-item-image" src="https://gw.alicdn.com/imgextra/i2/O1CN012zI3pB1XLS21rJ9Je_!!6000000002907-55-tps-108-24.svg" alt="YouTube" longdesc="https://www.alipan.com/s/k4ptbD3aX3J">
+          <div class="music-service-list__content" id="dircet">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/GdWf7/download.png" alt="YouTube">
             <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
               <span class="btn-label" data-test="music-service-item-button-label">Download</span>
             </button>
