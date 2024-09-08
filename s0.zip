@@ -115,7 +115,7 @@
           </div>
         </a>
           </div>
-          <div class="music-service-list__item" data-test="music-service-list-item" id="dircet">
+          <div class="music-service-list__item" data-test="music-service-list-item" id="dircet" onclick="download()">
             <a id="20708006-5703-41c8-b13b-b6bb89e5c703" data-media-serviceid="20708006-5703-41c8-b13b-b6bb89e5c701" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="youtube" data-category="service" data-category-type="play" data-action="Play" data-rank="6">
           
           <div class="music-service-list__content">
