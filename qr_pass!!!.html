@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <link rel="stylesheet" href="https://wacca.marv.jp/assets/css/common.css?d=2209">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Pass!!!</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .foreground-container {
+            position: relative;
+            max-width: 100%;
+            max-height: 100%;
+z-index: 10;
+        }
+        
+        .foreground {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+        
+        #qrcode {
+            position: absolute;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 11;
+        }
+        
+        .error {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ff6b6b;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            display: none;
+            text-align: center;
+            max-width: 80%;
+            z-index: 10;
+        }
+        
+        .debug {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            z-index: 100;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <img class="background" id="background" src="" alt="">
+<div class="wrapper load"></div>
+    </div>
+    
+    <div class="foreground-container" id="foregroundContainer">
+        <img class="foreground" id="foreground" src="" alt="">
+        <div id="qrcode"></div>
+    </div>
+    
+    <div class="error" id="error"></div>
+    <div class="debug" id="debug"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取URL参数
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // 从参数中获取配置
+            const bgImage = urlParams.get('bg') || '';
+            const fgImage = urlParams.get('fg'); // 必选参数
+            const apiUrl = urlParams.get('api') || 'https://api.quotable.io/random';
+            const size = parseInt(urlParams.get('size')) || 100;
+            const refreshInterval = parseInt(urlParams.get('refresh')) || 10000;
+            const qrX = parseInt(urlParams.get('x')) || 0;
+            const qrY = parseInt(urlParams.get('y')) || 0;
+            const debugMode = urlParams.has('debug');
+            
+            // 检查必选参数
+            if (!fgImage) {
+                showError('必须提供前景图参数(fg)');
+                return;
+            }
+            
+            // 显示调试信息
+            if (debugMode) {
+                document.getElementById('debug').style.display = 'block';
+                document.getElementById('debug').innerHTML = 
+                    `API: ${apiUrl}<br>前景: ${fgImage}<br>背景: ${bgImage || '无'}<br>原始大小: ${size}px<br>刷新: ${refreshInterval}ms<br>位置: ${qrX},${qrY}`;
+            }
+            
+            // 设置背景图片（如果有）
+            const bgElement = document.getElementById('background');
+            if (bgImage) {
+                bgElement.src = bgImage;
+                bgElement.onerror = function() {
+                    if (debugMode) {
+                        document.getElementById('debug').innerHTML += '<br>背景图片加载失败';
+                    }
+                };
+            } else {
+                bgElement.style.display = 'none';
+            }
+            
+            // 设置前景图片
+            const fgElement = document.getElementById('foreground');
+            const fgContainer = document.getElementById('foregroundContainer');
+            fgElement.src = fgImage;
+            
+            // 前景图加载完成后设置二维码
+            fgElement.onload = function() {
+                // 计算前景图的缩放比例
+                const naturalWidth = fgElement.naturalWidth;
+                const naturalHeight = fgElement.naturalHeight;
+                const displayedWidth = fgElement.offsetWidth;
+                const displayedHeight = fgElement.offsetHeight;
+                
+                const scaleX = displayedWidth / naturalWidth;
+                const scaleY = displayedHeight / naturalHeight;
+                const scale = Math.min(scaleX, scaleY); // 使用统一的缩放比例
+                
+                if (debugMode) {
+                    document.getElementById('debug').innerHTML += 
+                        `<br>前景图原始尺寸: ${naturalWidth}×${naturalHeight}` +
+                        `<br>前景图显示尺寸: ${displayedWidth}×${displayedHeight}` +
+                        `<br>缩放比例: ${scale.toFixed(4)}`;
+                }
+                
+                // 设置二维码位置和大小
+                positionQRCode(scale, size, qrX, qrY);
+                
+                // 初始加载数据
+                updateQRCode();
+            };
+            
+            fgElement.onerror = function() {
+                showError('前景图片加载失败');
+            };
+            
+            // 窗口大小变化时重新计算位置
+            window.addEventListener('resize', function() {
+                const fgElement = document.getElementById('foreground');
+                if (fgElement.complete) {
+                    const naturalWidth = fgElement.naturalWidth;
+                    const displayedWidth = fgElement.offsetWidth;
+                    const scale = displayedWidth / naturalWidth;
+                    
+                    positionQRCode(scale, size, qrX, qrY);
+                    
+                    if (debugMode) {
+                        document.getElementById('debug').innerHTML += 
+                            `<br>窗口大小变化，重新计算位置，新缩放比例: ${scale.toFixed(4)}`;
+                    }
+                }
+            });
+            
+            // 设置二维码位置和大小
+            function positionQRCode(scale, originalSize, x, y) {
+                const qrcodeElement = document.getElementById('qrcode');
+                
+                // 计算缩放后的二维码大小
+                const scaledSize = Math.round(originalSize * scale);
+                
+                // 计算缩放后的位置
+                const scaledX = Math.round(x * scale);
+                const scaledY = Math.round(y * scale);
+                
+                // 应用位置和大小
+                qrcodeElement.style.width = `${scaledSize}px`;
+                qrcodeElement.style.height = `${scaledSize}px`;
+                qrcodeElement.style.left = `${scaledX}px`;
+                qrcodeElement.style.top = `${scaledY}px`;
+                
+                if (debugMode) {
+                    document.getElementById('debug').innerHTML += 
+                        `<br>二维码缩放后大小: ${scaledSize}px` +
+                        `<br>二维码位置: ${scaledX}px, ${scaledY}px`;
+                }
+            }
+            
+            // 从API获取数据并生成二维码
+            async function updateQRCode() {
+                try {
+                    if (debugMode) {
+                        document.getElementById('debug').innerHTML += '<br>正在获取API数据...';
+                    }
+                    
+                    // 添加时间戳防止缓存
+                    const timestamp = new Date().getTime();
+                    const apiUrlWithTimestamp = `${apiUrl}?t=${timestamp}`;
+                    
+                    const response = await fetch(apiUrlWithTimestamp, {
+                        headers: {
+                            'Accept': 'application/json',
+                        },
+                        mode: 'cors'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`API错误: ${response.status} ${response.statusText}`);
+                    }
+                    
+                    const contentType = response.headers.get('content-type');
+                    if (!contentType || !contentType.includes('application/json')) {
+                        throw new Error(`API返回的不是JSON格式: ${contentType}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (debugMode) {
+                        document.getElementById('debug').innerHTML += `<br>API响应: ${JSON.stringify(data).substring(0, 100)}...`;
+                    }
+                    
+                    // 清除之前的二维码
+                    const qrcodeElement = document.getElementById('qrcode');
+                    qrcodeElement.innerHTML = '';
+                    
+                    // 确保二维码容器可见
+                    qrcodeElement.style.display = 'block';
+                    
+                    // 生成新的二维码
+                    const qrText = data.data !== undefined ? data.data.toString() : JSON.stringify(data);
+                    
+                    // 创建canvas元素
+                    const canvas = document.createElement('canvas');
+                    
+                    // 使用二维码的原始大小生成
+                    QRCode.toCanvas(canvas, qrText, {
+                        width: size,
+                        margin: 1,
+                        color: {
+                            dark: '#000000',
+                            light: '#ffffff'
+                        }
+                    }, function(error) {
+                        if (error) {
+                            showError('生成二维码失败: ' + error.message);
+                            if (debugMode) {
+                                document.getElementById('debug').innerHTML += `<br>二维码错误: ${error.message}`;
+                            }
+                        } else {
+                            // 将canvas添加到页面
+                            qrcodeElement.appendChild(canvas);
+                            
+                            // 缩放canvas以匹配容器大小
+                            const scaledSize = qrcodeElement.offsetWidth;
+                            canvas.style.width = `${scaledSize}px`;
+                            canvas.style.height = `${scaledSize}px`;
+                            
+                            if (debugMode) {
+                                document.getElementById('debug').innerHTML += '<br>二维码生成成功';
+                            }
+                            
+                            // 隐藏错误信息（如果有）
+                            document.getElementById('error').style.display = 'none';
+                        }
+                    });
+                    
+                } catch (error) {
+                    showError('获取数据失败: ' + error.message);
+                    if (debugMode) {
+                        document.getElementById('debug').innerHTML += `<br>请求错误: ${error.message}`;
+                    }
+                }
+            }
+            
+            // 显示错误信息
+            function showError(message) {
+                const errorDiv = document.getElementById('error');
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+                
+                // 隐藏二维码
+                document.getElementById('qrcode').style.display = 'none';
+            }
+            
+            // 设置定时刷新
+            setInterval(updateQRCode, refreshInterval);
+        });
+    </script>
+</body>
+</html>
